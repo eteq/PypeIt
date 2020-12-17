@@ -155,13 +155,18 @@ def load_spectrograph(spectrograph):
 
     if spectrograph == 'p200_dbsp_red':
         return spectrographs.p200_dbsp.P200DBSPRedSpectrograph()
-    
+
     if spectrograph == 'p200_dbsp_blue':
         return spectrographs.p200_dbsp.P200DBSPBlueSpectrograph()
 
     if spectrograph == 'p200_tspec':
         return spectrographs.p200_tspec.P200TSPECSpectrograph()
 
+    if spectrograph == 'salt_rss_visible':
+        return spectrographs.salt_rss.SALTRSSVisiblepectrograph()
+
+    if spectrograph == 'salt_rss_nir':
+        return spectrographs.salt_rss.SALTRSSNIRpectrograph()
+
 
     msgs.error('{0} is not a supported spectrograph.'.format(spectrograph))
-

@@ -25,3 +25,4 @@ from pypeit.spectrographs import not_alfosc
 from pypeit.spectrographs import p200_dbsp
 from pypeit.spectrographs import p200_tspec
 from pypeit.spectrographs import mmt_mmirs
+from pypeit.spectrographs import salt_rss
